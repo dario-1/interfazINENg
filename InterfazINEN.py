@@ -27,6 +27,12 @@ class rooti(QMainWindow):
         self.bt_normal.clicked.connect(self.normal)
         self.bt_minimizar.clicked.connect(self.minimizar)
         self.bt_cerrar.clicked.connect(lambda: self.close())
+        #botones de detalles
+        self.bt_tem1.clicked.connect(self.detalletem1)
+        self.bt_tem2.clicked.connect(self.detalletem2)
+        self.bt_humedad.clicked.connect(self.detallehume)
+        self.bt_presion.clicked.connect(self.detallepresi)
+
     #======================FUNCIONES=========
     def minimizar(self):
         self.showMinimized()
@@ -40,6 +46,17 @@ class rooti(QMainWindow):
         self.bt_maximizar.hide()
     def mousePressEvent(self,event):
         self.click_position=event.globalPos()
+    #===========Fuenciones detalles====
+    def detalletem1(self):
+         QMessageBox.warning(self, 'Advertencia', 'No se seleccionó ningún archivo.')
+    def detalletem2(self):
+         QMessageBox.warning(self, 'Advertencia', 'No se seleccionó ningún archivo.')
+    def detallehume(self):
+         QMessageBox.warning(self, 'Advertencia', 'No se seleccionó ningún archivo.')
+    def detallepresi(self):
+         QMessageBox.warning(self, 'Advertencia', 'No se seleccionó ningún archivo.')
+        
+        
         
           
 
