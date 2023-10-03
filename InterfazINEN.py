@@ -12,7 +12,7 @@ from PyQt5.QtCore import pyqtSlot
 class rooti(QMainWindow):
     def __init__(self):
         super(rooti,self).__init__()
-        loadUi('D:/ESPE/Practicas INEN/InterfazINEN/interfazinen.ui',self)
+        loadUi('D:/ESPE/Practicas INEN/InterfazINEN/interfazinen2.ui',self)
         #oculatar boton normal
         self.bt_normal.hide()
          #eliminar la ventana del main

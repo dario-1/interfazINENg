@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>589</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,24 +15,53 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">#centralwidget{
-	
-	background-color:rgba(24, 34, 43,100);
-	
+    <string notr="true">*{
+color: #fff;
+font-family: Arial;
+font-size: 12px;
+border: nine;
+background: none;
+}
+#centralwidget{
+background-color: rgb(33, 43, 51);
 }
 #frame_top{
+		
+background-color: rgb(61, 80, 95);
 	
-	background-color:rgb(222, 125, 9);
-	
+}
+#frame_top QPushButton{
+	background-color: rgb(61, 80, 95);
+	border-radius: 15px;
+	border: 3px solid rgb(120, 157, 186);
+}
+#frame_top QPushButton:hover{
+	background-color: rgb(120, 157, 186);
+}
+#frame_4 QPushButton{
+padding: 10px;
+border-radius: 5px;
+background-color: rgba(33, 43, 51, 100);
+}
+#frame_9 QPushButton{
+padding: 10px;
+border-radius: 5px;
+background-color: rgba(33, 43, 51, 100);
+}
+#frame_5 QPushButton{
+padding: 10px;
+border-radius: 5px;
+background-color: rgba(33, 43, 51, 100);
+}
+#frame_bot{
+
+background-color: rgba(61, 80, 95, 100)
 	
 }
 
-#frame_bot{
-	
-	
-background-color: rgb(236, 236, 236);
-
-	
+#gratemperatura1, #gratemperatura2, #grahumedad,#grapresion
+{
+background-color: rgba(61, 80, 95, 100)
 }
 #bt_minimizar,bt_maximizar,bt_cerrar{
 background-color: rgb(61, 80, 95);
@@ -68,14 +97,7 @@ background-color:rgb(120, 157, 186);
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{
-background-color: rgb(61, 80, 95);
-border-radius:15px;
-border:3px solid rgb(120,157,186);
-}
-QPushButton:hover{
-background-color:rgb(120, 157, 186);
-}</string>
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -87,7 +109,7 @@ background-color:rgb(120, 157, 186);
        <item>
         <widget class="QLabel" name="titulol">
          <property name="styleSheet">
-          <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+          <string notr="true">font: 87 10pt &quot;Arial &quot;;</string>
          </property>
          <property name="text">
           <string>Condiciones Ambientales INEN</string>
@@ -275,7 +297,7 @@ background-color:rgb(120, 157, 186);
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="frame_3">
+           <widget class="QFrame" name="frame_titulo">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -324,12 +346,15 @@ background-color:rgb(120, 157, 186);
               <widget class="QLabel" name="titulo2">
                <property name="font">
                 <font>
-                 <family>12pt Arial </family>
-                 <pointsize>12</pointsize>
-                 <weight>75</weight>
+                 <family>Arial</family>
+                 <pointsize>14</pointsize>
+                 <weight>9</weight>
                  <italic>false</italic>
-                 <bold>true</bold>
+                 <bold>false</bold>
                 </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 75 14pt &quot;Arial&quot;;</string>
                </property>
                <property name="text">
                 <string>Condiciones Ambientales</string>
@@ -383,7 +408,13 @@ background-color:rgb(120, 157, 186);
                 <font>
                  <family>Arial</family>
                  <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
                 </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                </property>
                <property name="text">
                 <string>Laboratorio: </string>
@@ -398,7 +429,7 @@ background-color:rgb(120, 157, 186);
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>9</pointsize>
+                 <pointsize>-1</pointsize>
                 </font>
                </property>
                <item>
@@ -451,7 +482,7 @@ background-color:rgb(120, 157, 186);
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>9</pointsize>
+                 <pointsize>-1</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -533,10 +564,14 @@ background-color:rgb(120, 157, 186);
                <property name="font">
                 <font>
                  <family>Arial</family>
-                 <pointsize>13</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
+                 <pointsize>12</pointsize>
+                 <weight>10</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
                 </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 87 12pt &quot;Arial&quot;;</string>
                </property>
                <property name="text">
                 <string>Nombre del Laboratorio</string>
@@ -633,10 +668,13 @@ background-color:rgb(120, 157, 186);
                    <font>
                     <family>Arial</family>
                     <pointsize>10</pointsize>
-                    <weight>75</weight>
+                    <weight>50</weight>
                     <italic>false</italic>
-                    <bold>true</bold>
+                    <bold>false</bold>
                    </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 10pt &quot;Arial&quot;;</string>
                   </property>
                   <property name="text">
                    <string>Fecha:</string>
@@ -663,8 +701,14 @@ background-color:rgb(120, 157, 186);
                   <property name="font">
                    <font>
                     <family>Arial</family>
-                    <pointsize>11</pointsize>
+                    <pointsize>10</pointsize>
+                    <weight>9</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
                    </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                   </property>
                   <property name="text">
                    <string>TextLabel</string>
@@ -718,7 +762,13 @@ background-color:rgb(120, 157, 186);
                    <font>
                     <family>Arial</family>
                     <pointsize>10</pointsize>
+                    <weight>9</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
                    </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                   </property>
                   <property name="text">
                    <string>Hora:</string>
@@ -745,8 +795,14 @@ background-color:rgb(120, 157, 186);
                   <property name="font">
                    <font>
                     <family>Arial</family>
-                    <pointsize>11</pointsize>
+                    <pointsize>10</pointsize>
+                    <weight>9</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
                    </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                   </property>
                   <property name="text">
                    <string>TextLabel</string>
@@ -799,7 +855,7 @@ background-color:rgb(120, 157, 186);
                 <item>
                  <widget class="QFrame" name="gratemperatura1">
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -835,9 +891,13 @@ background-color:rgb(120, 157, 186);
                       <font>
                        <family>Arial</family>
                        <pointsize>10</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
+                       <weight>9</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                      </property>
                      <property name="text">
                       <string>Temperatura</string>
@@ -848,13 +908,10 @@ background-color:rgb(120, 157, 186);
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <layout class="QVBoxLayout" name="t1vst">
                      <property name="spacing">
                       <number>0</number>
                      </property>
-                     <item>
-                      <widget class="QGraphicsView" name="graphicsView"/>
-                     </item>
                     </layout>
                    </item>
                    <item>
@@ -905,6 +962,9 @@ background-color:rgb(120, 157, 186);
                           <pointsize>10</pointsize>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 10pt &quot;Cambria Math&quot;;</string>
+                        </property>
                         <property name="text">
                          <string>Valor Actual</string>
                         </property>
@@ -931,7 +991,7 @@ background-color:rgb(120, 157, 186);
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>50</height>
+                       <height>60</height>
                       </size>
                      </property>
                      <property name="frameShape">
@@ -965,9 +1025,7 @@ background-color:rgb(120, 157, 186);
                         <property name="font">
                          <font>
                           <family>Arial</family>
-                          <pointsize>10</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <pointsize>-1</pointsize>
                          </font>
                         </property>
                         <property name="text">
@@ -1001,7 +1059,7 @@ background-color:rgb(120, 157, 186);
                 <item>
                  <widget class="QFrame" name="gratemperatura2">
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -1037,9 +1095,13 @@ background-color:rgb(120, 157, 186);
                       <font>
                        <family>Arial</family>
                        <pointsize>10</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
+                       <weight>9</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                      </property>
                      <property name="text">
                       <string>Temperatura 2</string>
@@ -1050,13 +1112,10 @@ background-color:rgb(120, 157, 186);
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <layout class="QVBoxLayout" name="t2vst">
                      <property name="spacing">
                       <number>0</number>
                      </property>
-                     <item>
-                      <widget class="QGraphicsView" name="graphicsView_2"/>
-                     </item>
                     </layout>
                    </item>
                    <item>
@@ -1107,6 +1166,9 @@ background-color:rgb(120, 157, 186);
                           <pointsize>10</pointsize>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 10pt &quot;Cambria Math&quot;;</string>
+                        </property>
                         <property name="text">
                          <string>Valor Actual</string>
                         </property>
@@ -1133,7 +1195,7 @@ background-color:rgb(120, 157, 186);
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>50</height>
+                       <height>60</height>
                       </size>
                      </property>
                      <property name="frameShape">
@@ -1167,9 +1229,7 @@ background-color:rgb(120, 157, 186);
                         <property name="font">
                          <font>
                           <family>Arial</family>
-                          <pointsize>10</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <pointsize>-1</pointsize>
                          </font>
                         </property>
                         <property name="text">
@@ -1203,7 +1263,7 @@ background-color:rgb(120, 157, 186);
                 <item>
                  <widget class="QFrame" name="grahumedad">
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -1239,9 +1299,13 @@ background-color:rgb(120, 157, 186);
                       <font>
                        <family>Arial</family>
                        <pointsize>10</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
+                       <weight>9</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                      </property>
                      <property name="text">
                       <string>Humedad</string>
@@ -1252,13 +1316,10 @@ background-color:rgb(120, 157, 186);
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                    <layout class="QVBoxLayout" name="hvst">
                      <property name="spacing">
                       <number>0</number>
                      </property>
-                     <item>
-                      <widget class="QGraphicsView" name="graphicsView_3"/>
-                     </item>
                     </layout>
                    </item>
                    <item>
@@ -1303,6 +1364,9 @@ background-color:rgb(120, 157, 186);
                           <pointsize>10</pointsize>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 10pt &quot;Cambria Math&quot;;</string>
+                        </property>
                         <property name="text">
                          <string>Valor Actual</string>
                         </property>
@@ -1329,7 +1393,7 @@ background-color:rgb(120, 157, 186);
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>50</height>
+                       <height>60</height>
                       </size>
                      </property>
                      <property name="frameShape">
@@ -1363,9 +1427,7 @@ background-color:rgb(120, 157, 186);
                         <property name="font">
                          <font>
                           <family>Arial</family>
-                          <pointsize>10</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <pointsize>-1</pointsize>
                          </font>
                         </property>
                         <property name="text">
@@ -1397,9 +1459,9 @@ background-color:rgb(120, 157, 186);
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="grapresion_2">
+                 <widget class="QFrame" name="grapresion">
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -1435,9 +1497,13 @@ background-color:rgb(120, 157, 186);
                       <font>
                        <family>Arial</family>
                        <pointsize>10</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
+                       <weight>9</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
                      </property>
                      <property name="text">
                       <string>Presión</string>
@@ -1448,13 +1514,10 @@ background-color:rgb(120, 157, 186);
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <layout class="QVBoxLayout" name="pvst">
                      <property name="spacing">
                       <number>0</number>
                      </property>
-                     <item>
-                      <widget class="QGraphicsView" name="graphicsView_4"/>
-                     </item>
                     </layout>
                    </item>
                    <item>
@@ -1499,6 +1562,9 @@ background-color:rgb(120, 157, 186);
                           <pointsize>10</pointsize>
                          </font>
                         </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 10pt &quot;Cambria Math&quot;;</string>
+                        </property>
                         <property name="text">
                          <string>Valor Actual</string>
                         </property>
@@ -1525,7 +1591,7 @@ background-color:rgb(120, 157, 186);
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>50</height>
+                       <height>60</height>
                       </size>
                      </property>
                      <property name="frameShape">
@@ -1559,9 +1625,7 @@ background-color:rgb(120, 157, 186);
                         <property name="font">
                          <font>
                           <family>Arial</family>
-                          <pointsize>10</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
+                          <pointsize>-1</pointsize>
                          </font>
                         </property>
                         <property name="text">
