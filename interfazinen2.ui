@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>853</width>
     <height>589</height>
    </rect>
   </property>
@@ -561,6 +561,9 @@ border:3px solid rgb(120,157,186);</string>
           </property>
           <item>
            <widget class="QFrame" name="frame_5">
+            <property name="styleSheet">
+             <string notr="true">font: 87 18pt &quot;Arial Black&quot;;</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -597,7 +600,10 @@ border:3px solid rgb(120,157,186);</string>
 color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
-                <string>Nombre del Laboratorio</string>
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
@@ -615,7 +621,7 @@ color: rgb(255, 255, 255);</string>
               </spacer>
              </item>
              <item>
-              <widget class="QPushButton" name="bt_copiar">
+              <widget class="QPushButton" name="bt_reporte">
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
@@ -1103,6 +1109,9 @@ color: rgb(255, 255, 255);</string>
                           <italic>false</italic>
                           <bold>false</bold>
                          </font>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>Ver Detalles</string>
@@ -1627,6 +1636,12 @@ color: rgb(255, 255, 255);</string>
                    </item>
                    <item>
                     <widget class="QFrame" name="frame_20">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">background-color: rgb(255, 255, 255);</string>
                      </property>
@@ -1637,6 +1652,9 @@ color: rgb(255, 255, 255);</string>
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout_17">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
                       <property name="leftMargin">
                        <number>0</number>
                       </property>

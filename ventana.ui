@@ -95,7 +95,7 @@ color: rgb(255, 255, 255);</string>
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="bt_close">
         <property name="minimumSize">
          <size>
           <width>30</width>
@@ -184,7 +184,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_3">
+             <widget class="QLabel" name="labinfo">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -236,7 +236,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_5">
+             <widget class="QLabel" name="equipoinf">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -288,7 +288,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_7">
+             <widget class="QLabel" name="magninfo">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -340,7 +340,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_9">
+             <widget class="QLabel" name="unidadinfo">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -392,7 +392,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_11">
+             <widget class="QLabel" name="intervaloinf">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -444,7 +444,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_13">
+             <widget class="QLabel" name="inicialinf">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -500,7 +500,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_15">
+             <widget class="QLabel" name="finalinfo">
               <property name="minimumSize">
                <size>
                 <width>300</width>
@@ -556,7 +556,7 @@ color: rgb(255, 255, 255);</string>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_17">
+             <widget class="QLabel" name="valoracinfo">
               <property name="minimumSize">
                <size>
                 <width>300</width>
